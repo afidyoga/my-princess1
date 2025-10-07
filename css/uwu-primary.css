@@ -206,21 +206,14 @@ a:focus {
 }
 
 .content__title {
-	font-size: clamp(2rem, 5vw, 3rem); /* responsif di semua device */
-    font-weight: inherit;
-    margin: 0;
-    color: var(--color-title, #ff2e63);
-    text-align: center; /* teks di tengah */
-    
-    /* supaya posisinya benar-benar di tengah layar */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    /* tambahan opsional agar tampilan lebih lembut */
-    font-family: "Poppins", sans-serif;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  font-size: clamp(2rem, 5vw, 3rem); /* responsif di semua device */
+  font-weight: inherit;
+  margin: 0 auto; /* otomatis tengah jika block element */
+  color: var(--color-title, #ff2e63);
+  text-align: center; /* teks rata tengah */
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  display: block;
 }
 
 .content__credits {
